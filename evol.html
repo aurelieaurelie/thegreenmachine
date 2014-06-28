@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	<title>The Green Machine - Mon évolution</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Données utilisateur">
-        <title>The Green Machine - Mon évolution</title>
-
-        <link rel="stylesheet" href="evol.css">
-		<script type="text/javascript" src="jquery.min.js"></script>
-		<script type="text/javascript" src="evol.js"></script>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
     </head>
     
     <body>
-		<div class="container">
-			<h2>Mon évolution</h2>
+		<div class="container-evol container">
+			<header> <img src="img/logo.png"> </header>
+			<div class="jumbotron"> 
+				<h2>Mon évolution</h2>
 
-			<div class="container-graph-evol">
-				<div class="graph-evol">
-					<div class="evol-block" id="hours"></div>
-					<div class="evol-block" id="celsius"></div>
-					<div class="evol-block" id="defreeze"></div>
-					<div class="evol-block" id="unplug"></div>
-					<div class="total-block" id="base-evol"></div>
-				</div>
-				<ul class="evol-nav">
-					<li><a href="#" data-id="hours">Heures creuses</a></li>
-					<li><a href="#" data-id="celsius">Baisser mon chauffage d'1°C</a></li>
-					<li><a href="#" data-id="defreeze">Dégivrer mon réfrigérateur</a></li>
-					<li><a href="#" data-id="unplug">Débrancher mes appareils</a></li>
-				</ul>
-
-			</div>
-			
-		</div>
+				<div class="col-lg-6 container-graph-evol">
+					<div class="graph-evol">
+						<div class="evol-block" id="hours"></div>
+						<div class="evol-block" id="celsius"></div>
+						<div class="evol-block" id="defreeze"></div>
+						<div class="evol-block" id="unplug"></div>
+						<div class="total-block" id="base-evol"></div>
+					</div>
+					<div class="col-lg-6 evol-nav">
+						<ul>
+							<li><a href="#" data-id="hours">Heures creuses</a></li>
+							<li><a href="#" data-id="celsius">Baisser mon chauffage d'1°C</a></li>
+							<li><a href="#" data-id="defreeze">Dégivrer mon réfrigérateur</a></li>
+							<li><a href="#" data-id="unplug">Débrancher mes appareils</a></li>
+						</ul>
+					</div>
+			</div><!-- jumbotron -->
+		</div><!-- container-evol -->
 
     </body>
 </html>
