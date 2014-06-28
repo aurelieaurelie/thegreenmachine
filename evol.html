@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Données utilisateur">
+        <title>The Green Machine - Mon évolution</title>
+
+        <link rel="stylesheet" href="evol.css">
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="evol.js"></script>
+    </head>
+    
+    <body>
+		<div class="container">
+			<h2>Mon évolution</h2>
+
+			<div class="container-graph-evol">
+				<div class="graph-evol">
+					<div class="evol-block" id="hours"></div>
+					<div class="evol-block" id="celsius"></div>
+					<div class="evol-block" id="defreeze"></div>
+					<div class="evol-block" id="unplug"></div>
+					<div class="total-block" id="base-evol"></div>
+				</div>
+				<ul class="evol-nav">
+					<li><a href="#" data-id="hours">Heures creuses</a></li>
+					<li><a href="#" data-id="celsius">Baisser mon chauffage d'1°C</a></li>
+					<li><a href="#" data-id="defreeze">Dégivrer mon réfrigérateur</a></li>
+					<li><a href="#" data-id="unplug">Débrancher mes appareils</a></li>
+				</ul>
+
+			</div>
+			
+		</div>
+
+    </body>
+</html>

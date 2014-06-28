@@ -1,0 +1,69 @@
+.container {
+	width: 600px;
+	background: #CCCCCC;
+	font-family: Helvetica, sans-serif;
+}
+
+.graph-evol {
+	width: 300px;
+	height: 300px;
+	margin: 50px 140px;
+	border: 1px solid black;
+	background: #ffffff;
+}
+
+.total-block {
+	background: #61ac5d;
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	top: 296px;
+}
+
+.evol-block {
+	width: 300px;
+	position: relative;
+	opacity: 0.5;
+}
+
+.evol-nav {
+	position: relative;
+	top: -25px;
+}
+
+.evol-nav li {
+	list-style: none;
+	display: inline-block;
+}
+
+.evol-nav a {
+	color: #61ac5d;
+}
+
+a.clicked {
+	color: tomato;
+}
+
+#hours {
+	background: #a85dac;
+	height: 15%;
+	top: 140px;
+}
+
+#celsius {
+	background: tomato;
+	height: 20%;
+	top: 140px;
+}
+
+#defreeze {
+	background: #5d61ac;
+	height: 5%;
+	top: 185px;
+}
+
+#unplug {
+	background: #aca85d;
+	height: 25%;
+	top: 125px;
+}
