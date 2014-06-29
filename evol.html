@@ -7,32 +7,42 @@
         
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
     </head>
     
     <body>
 		<div class="container-evol container">
-			<header> <img src="img/logo.png"> </header>
+			<header> 
+				<img src="img/logo.png"> 
+				<ul class="nav nav-pills green">
+				  <li class="active"><a href="home.html">Accueil</a></li>
+				  <li class="active"><a href="#">Profile</a></li>
+				  <li class="active"><a href="#">Messages</a></li>
+				</ul>
+			</header>
 			<div class="jumbotron"> 
-				<h2>Mon évolution</h2>
+								<h2>Mon évolution</h2>
 
-				<div class="col-lg-6 container-graph-evol">
 					<div class="graph-evol">
 						<div class="evol-block" id="hours"></div>
 						<div class="evol-block" id="celsius"></div>
 						<div class="evol-block" id="defreeze"></div>
-						<div class="evol-block" id="unplug"></div>
+						<div class="evol-block" id="unplug"><i class="fa fa-power-off fa-2x"></i></div>
 						<div class="total-block" id="base-evol"></div>
-					</div>
-					<div class="col-lg-6 evol-nav">
-						<ul>
-							<li><a href="#" data-id="hours">Heures creuses</a></li>
-							<li><a href="#" data-id="celsius">Baisser mon chauffage d'1°C</a></li>
-							<li><a href="#" data-id="defreeze">Dégivrer mon réfrigérateur</a></li>
-							<li><a href="#" data-id="unplug">Débrancher mes appareils</a></li>
+					
+						<ul class="evol-nav">
+							<li><a href="#" data-id="hours"><i class="fa fa-clock-o fa-2x"></i>Heures creuses</a></li>
+							<li><a href="#" data-id="celsius"><i class="fa fa-sun-o fa-2x"></i>Baisser mon chauffage d'1°C</a></li>
+							<li><a href="#" data-id="defreeze"><i class="fa fa-asterisk fa-2x"></i>Dégivrer mon réfrigérateur</a></li>
+							<li><a href="#" data-id="unplug"><i class="fa fa-power-off fa-2x"></i>Débrancher mes appareils</a></li>
+						</ul>
+						<ul class="engagement-nav nav nav-pills yellow">
+							<li class="active"><a href="#">Je m'engage !</a></li>
 						</ul>
 					</div>
+				</div>
 			</div><!-- jumbotron -->
 		</div><!-- container-evol -->
 

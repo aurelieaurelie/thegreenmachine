@@ -7,12 +7,11 @@ $(document).ready(function() {
         e.preventDefault();
   });
 
-	$('.evol-block').css('display','none');
+	$('.evol-block').hide();
       $('.evol-nav a').click(function(f) {
-  		//$(this).toggleClass('clicked');
 	    var evolBlock = $(this).data('id');
-	    $('.evol-block').not('#' + evolBlock).css('display','none');
-	    $('#' + evolBlock).css('display','block');
+	    $('.evol-block').not('#' + evolBlock).hide();
+	    $('#' + evolBlock).show();
 	    console.log('ouin');
 	      f.preventDefault();
   });
