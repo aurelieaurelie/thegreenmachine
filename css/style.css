@@ -102,35 +102,38 @@ ul li a:hover,ul li a:focus{
     border: 1px solid #19cf25;
     border-radius: 5px;
     background: #ffffff;
+    position: relative;
 }
 
 .total-block {
     background: #19cf25;
     width: 198px;
-    height: 100px;
-    position: relative;
-    top: 298px;
+    height: 63px;
+    position: absolute;
+    top: 0;
     left: 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .evol-block {
     width: 198px;
     position: relative;
-    opacity: 0.5;
+    border-radius: 0 0 5px 5px;
 }
 
 .evol-nav {
-    top: -90px; 
+    top: -15px; 
     left: 200px;   
     width: 250px;
     margin: 0;
-    position: relative;
+    position: absolute;
 }
 
 .engagement-nav {
   left: 235px;
-  position: relative;
-  top: 150px;
+  position: absolute;
+  top: 270px;
+  width: 300px;
 }
 
 .container .yellow .active a {
@@ -162,30 +165,31 @@ ul li a:hover,ul li a:focus{
 #done {
   background: #f3d910;
   height: 20%;
+  top: 318px;
 }
 
 #hours {
     background: #a85dac;
     height: 15%;
-    top: 140px;
+    top: 338px;
 }
 
 #celsius {
     background: tomato;
     height: 20%;
-    top: 140px;
+    top: 318px;
 }
 
 #defreeze {
     background: #5d61ac;
-    height: 5%;
-    top: 185px;
+    height: 30%;
+    top: 279px;
 }
 
 #unplug {
     background: #aca85d;
     height: 25%;
-    top: 125px;
+    top: 298px;
 }
 
 /* CUSTOM BOOTSTRAP FOR JUMBOTRON */
