@@ -8,7 +8,7 @@ $(document).ready(function() {
   });
 
 	$('.evol-block').hide();
-      $('.evol-nav a').click(function(f) {
+      $('.evol-nav a, .engagement-nav a').click(function(f) {
 	    var evolBlock = $(this).data('id');
 	    $('.evol-block').not('#' + evolBlock).hide();
 	    $('#' + evolBlock).show();
